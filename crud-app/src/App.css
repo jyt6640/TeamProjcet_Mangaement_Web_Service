@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+  background-image: url('../public/img/bgImg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin: 0;
+  padding: 0;
+}
