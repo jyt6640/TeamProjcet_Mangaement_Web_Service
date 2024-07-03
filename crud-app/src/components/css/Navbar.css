@@ -4,9 +4,11 @@
   font-weight: 700;
   font-style: normal;
 }
+
 * {
   font-family: 'MangoDdobak-B', sans-serif;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -45,7 +47,12 @@
   cursor: pointer;
 }
 
-.nav-links li:hover {
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links li a:hover {
   color: #007bff;
 }
 
