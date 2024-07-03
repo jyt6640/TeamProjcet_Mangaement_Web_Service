@@ -34,10 +34,10 @@
 }
 
 .nav-links {
+  margin-left: 6rem;
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 .nav-links li {
