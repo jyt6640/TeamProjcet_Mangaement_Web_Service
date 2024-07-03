@@ -4,12 +4,14 @@ import './css/TextAnimation.css'; // 새로운 CSS 파일을 추가합니다.
 import Introduce from './Introduce';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import LoginModal from './login/LoginModal';
 
 class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
       hideArrow: false,
+      isLoginModalOpen: false,
     };
     this.koTexts = [
       '안녕하세요! 프로젝트 관리 서비스입니다.',
@@ -127,11 +129,19 @@ class Main extends Component {
     const interval = setInterval(addClass, timer);
   };
 
+  openLoginModal = () => {
+    this.setState({ isLoginModalOpen: true });
+  };
+
+  closeLoginModal = () => {
+    this.setState({ isLoginModalOpen: false });
+  };
+
   render() {
-    const { hideArrow } = this.state;
+    const { hideArrow, isLoginModalOpen } = this.state;
     return (
       <div className="mainpage">
-        <Navbar />
+        <Navbar openLoginModal={this.openLoginModal} />
         <div>
           <h1 id="animated-text-ko"></h1>
           <h2 id="animated-text-en"></h2>
@@ -151,6 +161,7 @@ class Main extends Component {
           <Introduce />
         </div>
         <Footer />
+        <LoginModal isOpen={isLoginModalOpen} onClose={this.closeLoginModal} />
       </div>
     );
   }

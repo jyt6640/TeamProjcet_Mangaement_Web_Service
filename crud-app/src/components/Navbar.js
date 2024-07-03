@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './css/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ openLoginModal }) => {
   const [navBackground, setNavBackground] = useState(false);
 
   const handleScroll = () => {
@@ -29,7 +29,8 @@ const Navbar = () => {
         <li><a href="/faq">FAQ</a></li>
       </ul>
       <div className="login">
-        <a href="/login">LOGIN</a>
+        <button onClick={openLoginModal} className="login-button">LOGIN</button>
+        <a href="/register">REGISTER</a>
       </div>
     </div>
   );
