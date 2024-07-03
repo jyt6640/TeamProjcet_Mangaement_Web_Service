@@ -14,9 +14,15 @@ const Footer = () => {
         </div>
         <div className="footer-icons-and-bottom">
           <div className="footer-icons">
-            <img src="./img/instagram.png" alt="Instagram" />
-            <img src="./img/github.png" alt="GitHub" />
-            <img src="./img/youtube.png" alt="YouTube" />
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="./img/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+              <img src="./img/github.png" alt="GitHub" />
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="./img/youtube.png" alt="YouTube" />
+            </a>
           </div>
           <div className="footer-bottom">
             <img src='./img/yANUsLogo.png' alt="yANUs Logo" />

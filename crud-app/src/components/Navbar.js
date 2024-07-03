@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className={`navbar ${navBackground ? "navbar-scrolled" : ""}`}>
       <img className="logo" src="/img/yANUs.png" alt="yANUs Logo" />
       <ul className="nav-links">
-        <li><a href="/home">홈</a></li>
+        <li><a href="/">홈</a></li>
         <li><a href="/about">소개</a></li>
         <li><a href="/services">서비스 사용법</a></li>
         <li><a href="/faq">FAQ</a></li>

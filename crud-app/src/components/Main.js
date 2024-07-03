@@ -3,6 +3,7 @@ import './css/Main.css';
 import './css/TextAnimation.css'; // 새로운 CSS 파일을 추가합니다.
 import Introduce from './Introduce';
 import Footer from './Footer';
+import Navbar from './Navbar';
 
 class Main extends Component {
   constructor(props) {
@@ -130,6 +131,7 @@ class Main extends Component {
     const { hideArrow } = this.state;
     return (
       <div className="mainpage">
+        <Navbar />
         <div>
           <h1 id="animated-text-ko"></h1>
           <h2 id="animated-text-en"></h2>
